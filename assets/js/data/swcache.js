@@ -6,7 +6,7 @@ layout: compress
 
 const resource = [
     /* --- CSS --- */
-    '{{ "/assets/css/style.css" | relative_url }}',
+    '{{ "/assets/css/style.scss" | relative_url }}',
 
     /* --- PWA --- */
     '{{ "/app.js" | relative_url }}',
