@@ -405,7 +405,7 @@ Or adding `render_with_liquid: false` (Requires Jekyll 4.0 or higher) to the pos
 
 ## Videos
 
-You can embed a video with the following syntax:
+<!-- You can embed a video with the following syntax:
 
 ```liquid
 {% include embed/{Platform}.html id='{ID}' %}
@@ -413,7 +413,7 @@ You can embed a video with the following syntax:
 
 Where `Platform` is the lowercase of the platform name, and `ID` is the video ID.
 
-The following table shows how to get the two parameters we need in a given video URL, and you can also know the currently supported video platforms.
+The following table shows how to get the two parameters we need in a given video URL, and you can also know the currently supported video platforms. -->
 
 | Video URL                                                                                          | Platform  | ID            |
 | -------------------------------------------------------------------------------------------------- | --------- | :------------ |
