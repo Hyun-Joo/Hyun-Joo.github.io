@@ -5,7 +5,7 @@ layout: page
 
 {% assign pinned = site.posts | where: "pin", "true" %} {% assign default =
 site.posts | where_exp: "item", "item.pin != true and item.hidden != true" %} {%
-assign posts = "", split: "" %}
+assign posts = "" | split: "" %}
 
 <!-- Get pinned posts -->
 
@@ -21,7 +21,7 @@ push: pinned[i] %} {% endfor %} {% else %} {% assign pinned_num = 0 %} {% endif
 {% assign default_beg = 0 %} {% endif %} {% assign default_num = paginator.posts
 | size | minus: pinned_num %} {% assign default_end = default_beg | plus:
 default_num | minus: 1 %} {% if default_num > 0 %} {% for i in
-(default_beg..default_end) %} {% assign posts = posts push: default[i] %} {%
+(default_beg..default_end) %} {% assign posts = posts | push: default[i] %} {%
 endfor %} {% endif %}
 
 <div id="post-list">
