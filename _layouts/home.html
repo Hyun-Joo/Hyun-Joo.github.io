@@ -3,9 +3,9 @@ layout: page
 # The Home page layout
 ---
 
-{% raw %} {% assign pinned = site.posts | where: "pin", "true" %} {% assign
-default = site.posts | where_exp: "item", "item.pin != true and item.hidden !=
-true" %} {% assign posts = "" | split: "" %}
+<!-- {% assign pinned = site.posts | where: "pin", "true" %} {% assign default =
+site.posts | where_exp: "item", "item.pin != true and item.hidden != true" %} {%
+assign posts = "" | split: "" %} -->
 
 <!-- Get pinned posts -->
 
@@ -71,4 +71,3 @@ endfor %} {% endif %}
 <!-- #post-list -->
 
 {% if paginator.total_pages > 0 %} {% include post-paginator.html %} {% endif %}
-{% endraw %}
