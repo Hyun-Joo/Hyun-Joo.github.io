@@ -8,7 +8,7 @@ url: "https://github.com/Hyun-Joo/Hyun-Joo.github.io" # the base hostname & prot
 github_username:  Hyun-Joo
 
 # Build settings
-theme: minima
+#theme: minima
 remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-feed
