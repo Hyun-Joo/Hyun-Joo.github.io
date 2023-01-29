@@ -2,16 +2,16 @@ title: HJ's DevLog
 email: dlguswn714@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A junior developers' blog.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://github.com/Hyun-Joo/Hyun-Joo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  Hyun-Joo
 
 # Build settings
-#theme: minima
+#theme: just-the-docs
 remote_theme: just-the-docs/just-the-docs
 plugins:
-  - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -76,5 +76,8 @@ search:
   # Enable or disable the search button that appears in the bottom right corner of every page
   # Supports true or false (default)
   button: false
+
+# For copy button on code
+enable_copy_code_button: true
 
 color_scheme: nil
